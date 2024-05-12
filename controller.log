@@ -1,0 +1,54 @@
+2024-05-06 14:57:42 | INFO | controller | args: Namespace(dispatch_method='shortest_queue', host='0.0.0.0', port=10000)
+2024-05-06 14:57:42 | INFO | controller | Init controller
+2024-05-06 14:57:42 | ERROR | stderr | [32mINFO[0m:     Started server process [[36m14726[0m]
+2024-05-06 14:57:42 | ERROR | stderr | [32mINFO[0m:     Waiting for application startup.
+2024-05-06 14:57:42 | ERROR | stderr | [32mINFO[0m:     Application startup complete.
+2024-05-06 14:57:42 | ERROR | stderr | [32mINFO[0m:     Uvicorn running on [1mhttp://0.0.0.0:10000[0m (Press CTRL+C to quit)
+2024-05-06 14:57:45 | INFO | stdout | [32mINFO[0m:     127.0.0.1:57426 - "[1mGET / HTTP/1.1[0m" [31m404 Not Found[0m
+2024-05-06 14:58:04 | ERROR | stderr | [32mINFO[0m:     Shutting down
+2024-05-06 14:58:05 | ERROR | stderr | [32mINFO[0m:     Waiting for application shutdown.
+2024-05-06 14:58:05 | ERROR | stderr | [32mINFO[0m:     Application shutdown complete.
+2024-05-06 14:58:05 | ERROR | stderr | [32mINFO[0m:     Finished server process [[36m14726[0m]
+2024-05-06 14:58:05 | ERROR | stderr | Traceback (most recent call last):
+2024-05-06 14:58:05 | ERROR | stderr |   File "/home/a/miniconda3/envs/detic/lib/python3.8/runpy.py", line 193, in _run_module_as_main
+2024-05-06 14:58:05 | ERROR | stderr |     return _run_code(code, main_globals, None,
+2024-05-06 14:58:05 | ERROR | stderr |   File "/home/a/miniconda3/envs/detic/lib/python3.8/runpy.py", line 86, in _run_code
+2024-05-06 14:58:05 | ERROR | stderr |     exec(code, run_globals)
+2024-05-06 14:58:05 | ERROR | stderr |   File "/media/php/code/LLaVA/llava/serve/controller.py", line 298, in <module>
+2024-05-06 14:58:05 | ERROR | stderr |     uvicorn.run(app, host=args.host, port=args.port, log_level="info")
+2024-05-06 14:58:05 | ERROR | stderr |   File "/home/a/miniconda3/envs/detic/lib/python3.8/site-packages/uvicorn/main.py", line 575, in run
+2024-05-06 14:58:05 | ERROR | stderr |     server.run()
+2024-05-06 14:58:05 | ERROR | stderr |   File "/home/a/miniconda3/envs/detic/lib/python3.8/site-packages/uvicorn/server.py", line 65, in run
+2024-05-06 14:58:05 | ERROR | stderr |     return asyncio.run(self.serve(sockets=sockets))
+2024-05-06 14:58:05 | ERROR | stderr |   File "/home/a/miniconda3/envs/detic/lib/python3.8/asyncio/runners.py", line 43, in run
+2024-05-06 14:58:05 | ERROR | stderr |     return loop.run_until_complete(main)
+2024-05-06 14:58:05 | ERROR | stderr |   File "uvloop/loop.pyx", line 1511, in uvloop.loop.Loop.run_until_complete
+2024-05-06 14:58:05 | ERROR | stderr |   File "uvloop/loop.pyx", line 1504, in uvloop.loop.Loop.run_until_complete
+2024-05-06 14:58:05 | ERROR | stderr |   File "uvloop/loop.pyx", line 1377, in uvloop.loop.Loop.run_forever
+2024-05-06 14:58:05 | ERROR | stderr |   File "uvloop/loop.pyx", line 555, in uvloop.loop.Loop._run
+2024-05-06 14:58:05 | ERROR | stderr |   File "uvloop/loop.pyx", line 474, in uvloop.loop.Loop._on_idle
+2024-05-06 14:58:05 | ERROR | stderr |   File "uvloop/cbhandles.pyx", line 83, in uvloop.loop.Handle._run
+2024-05-06 14:58:05 | ERROR | stderr |   File "uvloop/cbhandles.pyx", line 63, in uvloop.loop.Handle._run
+2024-05-06 14:58:05 | ERROR | stderr |   File "/home/a/miniconda3/envs/detic/lib/python3.8/site-packages/uvicorn/server.py", line 69, in serve
+2024-05-06 14:58:05 | ERROR | stderr |     await self._serve(sockets)
+2024-05-06 14:58:05 | ERROR | stderr |   File "/home/a/miniconda3/envs/detic/lib/python3.8/contextlib.py", line 120, in __exit__
+2024-05-06 14:58:05 | ERROR | stderr |     next(self.gen)
+2024-05-06 14:58:05 | ERROR | stderr |   File "/home/a/miniconda3/envs/detic/lib/python3.8/site-packages/uvicorn/server.py", line 328, in capture_signals
+2024-05-06 14:58:05 | ERROR | stderr |     signal.raise_signal(captured_signal)
+2024-05-06 14:58:05 | ERROR | stderr | KeyboardInterrupt
+2024-05-06 14:59:19 | INFO | controller | args: Namespace(dispatch_method='shortest_queue', host='192.10.84.151', port=10000)
+2024-05-06 14:59:19 | INFO | controller | Init controller
+2024-05-06 14:59:20 | ERROR | stderr | [32mINFO[0m:     Started server process [[36m15124[0m]
+2024-05-06 14:59:20 | ERROR | stderr | [32mINFO[0m:     Waiting for application startup.
+2024-05-06 14:59:20 | ERROR | stderr | [32mINFO[0m:     Application startup complete.
+2024-05-06 14:59:20 | ERROR | stderr | [31mERROR[0m:    [Errno 99] error while attempting to bind on address ('192.10.84.151', 10000): cannot assign requested address
+2024-05-06 14:59:20 | ERROR | stderr | [32mINFO[0m:     Waiting for application shutdown.
+2024-05-06 14:59:20 | ERROR | stderr | [32mINFO[0m:     Application shutdown complete.
+2024-05-06 14:59:34 | INFO | controller | args: Namespace(dispatch_method='shortest_queue', host='192.10.84.151', port=2343)
+2024-05-06 14:59:34 | INFO | controller | Init controller
+2024-05-06 14:59:34 | ERROR | stderr | [32mINFO[0m:     Started server process [[36m15239[0m]
+2024-05-06 14:59:34 | ERROR | stderr | [32mINFO[0m:     Waiting for application startup.
+2024-05-06 14:59:34 | ERROR | stderr | [32mINFO[0m:     Application startup complete.
+2024-05-06 14:59:34 | ERROR | stderr | [31mERROR[0m:    [Errno 99] error while attempting to bind on address ('192.10.84.151', 2343): cannot assign requested address
+2024-05-06 14:59:34 | ERROR | stderr | [32mINFO[0m:     Waiting for application shutdown.
+2024-05-06 14:59:34 | ERROR | stderr | [32mINFO[0m:     Application shutdown complete.
